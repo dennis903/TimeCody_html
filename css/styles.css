@@ -52,6 +52,7 @@ table {
 *:after,
 *:before {
 	box-sizing: border-box;
+	font-family: pretendard;
 }
 
 html {
