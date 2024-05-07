@@ -336,6 +336,19 @@ a {
   font-weight: 400;
 }
 
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon-arrow-left {width: .7rem; height: 1.5rem; background-image: url('../lib/img/icon/arrow-left.png');}
+.icon-diary {width: 2.4rem; height: 2.4rem; background-image: url('../lib/img/icon/diary.png');}
+.icon-todo {width: 2.4rem; height: 2.4rem; background-image: url('../lib/img/icon/todo.png');}
+.icon-calendar {width: 2.4rem; height: 2.4rem; background-image: url('../lib/img/icon/calendar.png');}
+.icon-planner {width: 2.4rem; height: 2.4rem; background-image: url('../lib/img/icon/planner.png');}
+.icon-store {width: 2.4rem; height: 2.4rem; background-image: url('../lib/img/icon/store.png');}
+
 @media screen and (max-width: 767px) {
 
 }

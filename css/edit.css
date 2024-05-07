@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.edit-info {
+    margin-top: 2.3rem;
+}
+
+.edit-image {
+    padding: 0 15.8rem .9rem 15.8rem;
+    width: 7.4rem;
+    height: 7.4rem;
+}

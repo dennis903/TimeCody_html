@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+.header-link {
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.title2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.my-profile {
+  margin-top: 2.3rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.8rem 2rem;
+}
+
+.my-image {
+  width: 7.6rem;
+  height: 7.6rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.my-image__img {
+  width: 100%;
+}
+
+.my-info__section {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.my-info__title {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.my-info__class {
+  display: inline-block;
+  padding: .4rem .7rem;
+  border-radius: .5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #DEDEDE;
+}
+
+.my-info__email {
+  padding-top: .4rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.my-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  padding: 0rem 2rem 1.5rem 2rem;
+  font-size: 1.8rem;
+  margin-top: 4rem;
+}
+
+.member-class {
+  margin-top: 8.8rem;
+  padding: 0 10.9rem 0 10.8rem;
+  font-size: 1.4rem;
+}
+
+.version {
+  padding: .6rem 14.7rem 0 14.7rem;
+  font-size: 1.45rem;
+  color: #AAAAAA;
+}
+
+.session-control {
+  display: flex;
+  gap: 10.9rem;
+  padding: 0 7.5rem 0 7.4rem;
+  margin-top: 4rem;
+  font-size: 1.6rem;
+}
+
+.session-control__link--color-red {
+  color: #FF0000;
+}
+
+.gnb__list {
+  display: flex;
+  gap: 4.8rem;
+  margin-top: 4rem;
+  padding: 1.5rem 3.5rem 3rem 3.5rem;
+  font-size: .9rem;
+}
