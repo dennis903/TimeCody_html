@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>Document</title>
+  <link rel="apple-touch-icon-precomposed" href="">
+  <link rel="stylesheet" href="../../lib/font/Pretendard-1.3.9/web/static/pretendard.css">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="../../css/jiwon.css">
+</head>
+<body>
+  <div id="wrap">
+    <header class="header">
+      <div class="header-link">
+        <a href="#" class="back-link">
+          <i class="icon icon-arrow-left"></i>
+        </a>
+        <h2 class="title2">설정</h2>  
+      </div>
+    </header>
+    <main class="main">
+      <div class="my-config">
+        <section class="my-config__section">
+          <h2 class="title3">알림 설정</h2>
+          <ul class="config-list">
+            <li class="config-item">
+              <span class="config-item__text">소리</span>
+              <div class="switch">
+                <input type="checkbox" id="sound" class='switch__checkbox'>
+                <label for="sound" class="switch__slider"></label>
+              </div>
+            </li>
+            <li class="config-item">
+              <span class="config-item__text">진동</span>
+              <div class="switch">
+                <input type="checkbox" id="vibrate" class='switch__checkbox'>
+                <label for="vibrate" class="switch__slider"></label>
+              </div>
+            </li>
+            <li class="config-item">
+              <span class="config-item__text">푸시알림</span>
+              <div class="switch">
+                <input type="checkbox" id="push" class='switch__checkbox'>
+                <label for="push" class="switch__slider"></label>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="my-config__section">
+          <h2 class="title3">상세 설정</h2>
+          <ul class="config-list">
+            <li class="config-item">
+              <span class="config-item__text">음력 표시</span>
+              <div class="switch">
+                <input type="checkbox" id="lunar" class='switch__checkbox'>
+                <label for="lunar" class="switch__slider"></label>
+              </div>
+            </li>
+            <li class="config-item">
+              <span class="config-item__text">날씨 표시</span>
+              <div class="switch">
+                <input type="checkbox" id="weather" class='switch__checkbox'>
+                <label for="weather" class="switch__slider"></label>
+              </div>
+            </li>
+            <li class="config-item">
+              <span class="config-item__text">주말 표시</span>
+              <div class="switch">
+                <input type="checkbox" id="weekend" class='switch__checkbox'>
+                <label for="weekend" class="switch__slider"></label>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="my-config__section">
+          <h2 class="blind" style="display: none;">주 시작 요일</h2>
+          <details class="config__accordion">
+            <summary class="title3">주 시작 요일</summary>
+            <ul class="config-accordion">
+              <li class="config-accordion__item">
+                <label class="config-accordion__text">일요일</label>
+                <div class="config-accordion__check">
+                  <i class="icon icon-check-complete"></i>
+                  <input type="radio" name="day" id="sunday" class="config-accordion__radio">
+                </div>
+              </li>
+              <li class="config-accordion__item">
+                <label class="config-accordion__text">월요일</label>
+                <div class="config-accordion__check">
+                  <i class="icon icon-check-complete"></i>
+                  <input type="radio" name="day" id="monday" class="config-accordion__radio">
+                </div>
+              </li>
+            </ul>
+          </details>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <nav class="gnb">
+        <ul class="gnb-list">
+          <li class="gnb-item">
+            <a href="#" class="gnb-item__link">
+              <i class="icon icon-diary"></i>
+              다이어리
+            </a>
+          </li>
+          <li class="gnb-item">
+            <a href="#" class="gnb-item__link">
+              <i class="icon icon-todo"></i>
+              할 일
+            </a>
+          </li>
+          <li class="gnb-item">
+            <a href="#" class="gnb-item__link">
+              <i class="icon icon-calendar"></i>
+              캘린더
+            </a>
+          </li>
+          <li class="gnb-item">
+            <a href="#" class="gnb-item__link">
+              <i class="icon icon-planner"></i>
+              계획표
+            </a>
+          </li>
+          <li class="gnb-item">
+            <a href="#" class="gnb-item__link">
+              <i class="icon icon-store"></i>
+              스토어
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>
