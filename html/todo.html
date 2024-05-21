@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>Document</title>
+  <link rel="apple-touch-icon-precomposed" href="">
+  <link rel="stylesheet" href="../lib/font/Pretendard-1.3.9/web/static/pretendard.css">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div id="wrap">
+    <header class="header">
+      <div class="header-contents">
+        <div class="header-left">
+          <div class="back">
+            <a href="#" class="back__link">
+              <i class="icon icon-back"></i>
+            </a>
+            <h2 class="back__title">할 일</h2>
+          </div>
+        </div>
+        <div class="header-right">
+          <div class="header-util">
+            <button type="button" class="icon-btn">
+              <i class="icon icon-search"></i>
+            </button>
+            <button type="button" class="icon-btn">
+              <i class="icon icon-hamburger"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="edit">
+      <div class="edit-left"></div>
+      <div class="edit-right">
+        <button type="button" class="btn edit-btn">
+          <span class="edit-order">순서 편집</span>
+          <i class="icon icon-order"></i>
+        </button>
+      </div>
+    </div>
+    <main class="main main--has-gnb">
+      <div class="calendar-nav">
+        <p class="calendar-nav__description">내 캘린더</p>
+        <div class="calendar-info">
+          <button type="button" class="icon-btn">
+            <i class="icon icon-arrow-left"></i>
+          </button>
+          <h2 class="calendar-info__title">2023년 12월 3주차</h2>
+          <button type="button" class="icon-btn">
+            <i class="icon icon-arrow-right"></i>
+          </button>
+          <div class="calendar-additional">
+            <button type="button" class="icon-btn">
+              <i class="icon icon-plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="todo-info">
+        <button type="button" class="icon-btn">
+          <i class="icon icon-arrow-left"></i>
+        </button>
+        <ul class="todo-info__date-list">
+          <li class="todo-info__date-item">
+            <div class="todo-info__date-item__detail">
+              <p class="todo-info__date-item__day">일</p>
+              <p class="todo-info__date-item__sub-text">10</p>
+            </div>
+          </li>
+          <li class="todo-info__date-item">
+            <div class="todo-info__date-item__detail">
+              <p class="todo-info__date-item__day">월</p>
+              <p class="todo-info__date-item__sub-text">11</p>
+            </div>
+          </li>
+          <li class="todo-info__date-item">
+            <div class="todo-info__date-item__detail">
+              <p class="todo-info__date-item__day">화</p>
+              <p class="todo-info__date-item__sub-text">12</p>
+            </div>
+          </li>
+          <li class="todo-info__date-item">
+            <div class="todo-info__date-item__detail">
+              <p class="todo-info__date-item__day">수</p>
+              <p class="todo-info__date-item__sub-text">13</p>
+            </div>
+          </li>
+          <li class="todo-info__date-item">
+            <div class="todo-info__date-item__detail">
+              <p class="todo-info__date-item__day">목</p>
+              <p class="todo-info__date-item__sub-text">14</p>
+            </div>
+          </li>
+          <li class="todo-info__date-item">
+            <div class="todo-info__date-item__detail">
+              <p class="todo-info__date-item__day">금</p>
+              <p class="todo-info__date-item__sub-text">15</p>
+            </div>
+          </li>
+          <li class="todo-info__date-item">
+            <div class="todo-info__date-item__detail">
+              <p class="todo-info__date-item__day">토</p>
+              <p class="todo-info__date-item__sub-text">16</p>
+            </div>
+          </li>
+        </ul>
+        <button type="button" class="icon-btn">
+          <i class="icon icon-arrow-right"></i>
+        </button>
+      </div>
+      <h2 class="todo-date-title">2023년 12월 12일</h2>
+      <div class="todo-contents">
+        <ul class="todo-list">
+          <li class="todo-item">
+            <div class="todo-item__check"></div>
+            <p class="todo-item-title">1984 독서하기</p>
+          </li>
+          <li class="todo-item">
+            <div class="todo-item__check"></div>
+            <p class="todo-item-title">영어 공부하기</p>
+          </li>
+          <li class="todo-item">
+            <div class="todo-item__check"></div>
+            <p class="todo-item-title">과외하기</p>
+          </li>
+          <li class="todo-item">
+            <div class="todo-item__check"></div>
+            <p class="todo-item-title">학원 과제</p>
+          </li>
+          <li class="todo-item">
+            <div class="todo-item__check"></div>
+            <p class="todo-item-title">포트폴리오 제작</p>
+            <div class="open">
+              <i class="icon icon-open"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer class="footer">
+      <nav class="gnb">
+        <ul class="gnb-list">
+          <li class="gnb-item">
+            <a href="#" class="gnb-item__link">
+              <i class="icon icon-diary"></i>
+              다이어리
+            </a>
+          </li>
+          <li class="gnb-item">
+            <a href="#" class="gnb-item__link">
+              <i class="icon icon-todo"></i>
+              할 일
+            </a>
+          </li>
+          <li class="gnb-item">
+            <a href="#" class="gnb-item__link">
+              <i class="icon icon-calendar"></i>
+              캘린더
+            </a>
+          </li>
+          <li class="gnb-item">
+            <a href="#" class="gnb-item__link">
+              <i class="icon icon-planner"></i>
+              계획표
+            </a>
+          </li>
+          <li class="gnb-item">
+            <a href="#" class="gnb-item__link">
+              <i class="icon icon-store"></i>
+              스토어
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>
