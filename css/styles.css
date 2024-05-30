@@ -349,6 +349,8 @@ a {
 .icon-calendar {width: 2.4rem; height: 2.4rem; background-image: url('../lib/img/icon/calendar.png');}
 .icon-planner {width: 2.4rem; height: 2.4rem; background-image: url('../lib/img/icon/planner.png');}
 .icon-store {width: 2.4rem; height: 2.4rem; background-image: url('../lib/img/icon/store.png');}
+.icon-up {width: 2.4rem; height: .7rem; background-image: url('../lib/img/icon/up.png');}
+.icon-check-complete {width: 2rem; height: 1.3rem; background-image: url('../lib/img/icon/check-complete.png');}
 
 @media screen and (max-width: 767px) {
 
