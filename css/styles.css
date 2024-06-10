@@ -135,9 +135,15 @@ a {
   background-image: url('../lib/img/icon/plus.png');
 }
 
+.icon-detail {
+  width: 1.6rem;
+  height: .5rem;
+  background-image: url('../lib/img/icon/detail.png');
+}
+
 .icon-close {
-  width: 1.5rem;
-  height: .7rem;
+  width: 1.6rem;
+  height: 1.7rem;
   background-image: url('../lib/img/icon/close.png');
 }
 
@@ -189,6 +195,81 @@ a {
   padding: 0;
   width: 2.4rem;
   height: 2.4rem;
+}
+
+.sidebar {
+  width: 310px;
+}
+
+.sidebar-header-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.sidebar-btn {
+  background-color: transparent;
+  border: none;
+  padding: .25rem;
+}
+
+.sidebar-detail-btn {
+  line-height: .7rem;
+}
+
+.sidebar-header-contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem 2rem 1rem 2rem;
+}
+
+.sidebar-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sidebar-profile__img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.sidebar-username {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.sidebar__title {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.sidebar-main {
+  padding: 1.5rem 2rem;
+}
+
+.sidebar-menu-item {
+  padding: 1rem 0;
+}
+
+.sidebar-menu__detail {
+  display: flex;
+  justify-content: space-between;
+  height: 2rem;
+  align-items: center;
+}
+
+.sidebar-sub-item {
+  padding: .5rem 2rem;
+  display: flex;
+  justify-content: center;
+
+}
+
+.sidebar-sub__title {
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 .header {
@@ -332,6 +413,15 @@ a {
   font-size: .9rem;
 }
 
+.gnb-item:active {
+  color: #000;
+  background-color: #cdcdcd;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  
+}
+
 .link--theme-1 {
   display: block;
   color: #c1c1c1;
@@ -375,12 +465,13 @@ a {
 .schedule-item {
   border: 1px solid;
   margin: 1rem 2rem;
-  padding: .5rem;
+  padding: .5rem 5.5rem;
   height: 3rem;
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
   border: 1px solid #b8f095;
+
 }
 
 .schedule-item::before {
@@ -416,6 +507,12 @@ a {
 .schedule-item-subtitle {
   font-size: 1.6rem;
   font-weight: 400;
+  display:block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
 }
 
 .schedule-time-list {
@@ -465,6 +562,7 @@ a {
   height: 1.5rem;
   border-radius: 50%;
   border: 1px solid #9990F8;
+  flex-shrink: 0;
 }
 
 .schedule-time__info-detail {
@@ -475,6 +573,13 @@ a {
   font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: .3rem;
+  display:block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  text-align: left;
+  padding-right: 2rem;
 }
 
 .schedule-time__sub-text {
