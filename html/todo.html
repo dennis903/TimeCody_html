@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>Document</title>
+  <link rel="apple-touch-icon-precomposed" href="">
+  <link rel="stylesheet" href="../lib/font/Pretendard-1.3.9/web/static/pretendard.css">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div id="wrap">
+    <header class="header">
+      <div class="header-contents">
+        <div class="header-left">
+          <div class="back">
+            <a href="#" class="back__link">
+              <i class="icon icon-back"></i>
+            </a>
+            <h2 class="back__title">할 일</h2>
+          </div>
+        </div>
+        <div class="header-right">
+          <div class="header-util">
+            <button type="button" class="icon-btn">
+              <i class="icon icon-search"></i>
+            </button>
+            <button type="button" class="icon-btn">
+              <i class="icon icon-hamburger"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="edit">
+      <div class="edit-left"></div>
+      <div class="edit-right">
+        <button type="button" class="btn edit-btn">
+          <span class="edit-order">순서 편집</span>
+          <i class="icon icon-order"></i>
+        </button>
+      </div>
+    </div>
+    <main class="main main--has-gnb">
+      <div class="calendar-nav">
+        <p class="calendar-nav__description">내 캘린더</p>
+        <div class="calendar-info">
+          <button type="button" class="icon-btn">
+            <i class="icon icon-arrow-left"></i>
+          </button>
+          <h2 class="calendar-info__title">2023년 12월 3주차</h2>
+          <button type="button" class="icon-btn">
+            <i class="icon icon-arrow-right"></i>
+          </button>
+          <div class="calendar-additional">
+            <button type="button" class="icon-btn">
+              <i class="icon icon-plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="todo-info">
+        <button type="button" class="icon-btn">
+          <i class="icon icon-arrow-left"></i>
+        </button>
+        <ul class="todo-info__date-list">
+          <li class="todo-info__date-item">
+            <div class="date date--sun">
+              <p class="date__day">일</p>
+              <p class="date__day-num">10</p>
+            </div>
+          </li>
+          <li class="todo-info__date-item">
+            <div class="date">
+              <p class="date__day">월</p>
+              <p class="date__day-num">11</p>
+            </div>
+          </li>
+          <li class="todo-info__date-item">
+            <div class="date date--active">
+              <p class="date__day">화</p>
+              <p class="date__day-num">12</p>
+            </div>
+          </li>
+          <li class="todo-info__date-item">
+            <div class="date">
+              <p class="date__day">수</p>
+              <p class="date__day-num">13</p>
+            </div>
+          </li>
+          <li class="todo-info__date-item">
+            <div class="date">
+              <p class="date__day">목</p>
+              <p class="date__day-num">14</p>
+            </div>
+          </li>
+          <li class="todo-info__date-item">
+            <div class="date">
+              <p class="date__day">금</p>
+              <p class="date__day-num">15</p>
+            </div>
+          </li>
+          <li class="todo-info__date-item">
+            <div class="date date--sat">
+              <p class="date__day">토</p>
+              <p class="date__day-num">16</p>
+            </div>
+          </li>
+        </ul>
+        <button type="button" class="icon-btn">
+          <i class="icon icon-arrow-right"></i>
+        </button>
+      </div>
+      <h2 class="todo-date-title">2023년 12월 12일</h2>
+      <div class="todo-contents">
+        <ul class="todo-list">
+          <li class="todo-item">
+            <div class="todo-item__detail">
+              <button type="button" class="check-btn check-btn--complete">
+                <i class="icon icon-check-complete-w"></i>
+              </button>
+              <p class="todo-item__title">1984 독서하기</p>
+            </div>
+            <div class="status-selectors">
+              <div class="status-selector">
+                <button type="button" class="check-btn check-btn--complete">
+                  <i class="icon icon-check-complete-w"></i>
+                </button>
+                <span class="status-selector__text">완료</span>
+              </div>
+              <div class="status-selector">
+                <button type="button" class="check-btn check-btn--doing">
+                  <svg width="18" height="17" viewBox="0 0 18 17" fill="#b8f095" xmlns="http://www.w3.org/2000/svg" class="icon-doing">
+                    <path
+                      d="M7.71752 2.39491L1.36502 12.9999C1.23404 13.2267 1.16474 13.4839 1.16401 13.7458C1.16327 14.0077 1.23113 14.2653 1.36084 14.4928C1.49054 14.7204 1.67756 14.91 1.9033 15.0428C2.12903 15.1756 2.38562 15.247 2.64752 15.2499H15.3525C15.6144 15.247 15.871 15.1756 16.0967 15.0428C16.3225 14.91 16.5095 14.7204 16.6392 14.4928C16.7689 14.2653 16.8368 14.0077 16.836 13.7458C16.8353 13.4839 16.766 13.2267 16.635 12.9999L10.2825 2.39491C10.1488 2.17449 9.96056 1.99225 9.73591 1.86577C9.51127 1.7393 9.25782 1.67285 9.00002 1.67285C8.74221 1.67285 8.48876 1.7393 8.26412 1.86577C8.03947 1.99225 7.85122 2.17449 7.71752 2.39491V2.39491Z"
+                      fill="#b8f095"
+                      stroke="#b8f095"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <span class="status-selector__text">진행중</span>
+              </div>
+            </div>
+          </li>
+          <li class="todo-item">
+            <div class="todo-item__detail">
+              <button type="button" class="check-btn check-btn--doing">
+                <svg width="18" height="17" viewBox="0 0 18 17" fill="#b8f095" xmlns="http://www.w3.org/2000/svg" class="icon-doing">
+                  <path
+                    d="M7.71752 2.39491L1.36502 12.9999C1.23404 13.2267 1.16474 13.4839 1.16401 13.7458C1.16327 14.0077 1.23113 14.2653 1.36084 14.4928C1.49054 14.7204 1.67756 14.91 1.9033 15.0428C2.12903 15.1756 2.38562 15.247 2.64752 15.2499H15.3525C15.6144 15.247 15.871 15.1756 16.0967 15.0428C16.3225 14.91 16.5095 14.7204 16.6392 14.4928C16.7689 14.2653 16.8368 14.0077 16.836 13.7458C16.8353 13.4839 16.766 13.2267 16.635 12.9999L10.2825 2.39491C10.1488 2.17449 9.96056 1.99225 9.73591 1.86577C9.51127 1.7393 9.25782 1.67285 9.00002 1.67285C8.74221 1.67285 8.48876 1.7393 8.26412 1.86577C8.03947 1.99225 7.85122 2.17449 7.71752 2.39491V2.39491Z"
+                    fill="#b8f095"
+                    stroke="#b8f095"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <p class="todo-item__title">영어 공부하기</p>
+            </div>
+          </li>
+          <li class="todo-item">
+            <div class="todo-item__detail">
+              <button type="button" class="check-btn"></button>
+              <p class="todo-item__title">과외하기</p>
+            </div>
+          </li>
+          <li class="todo-item">
+            <div class="todo-item__detail">
+              <button type="button" class="check-btn"></button>
+              <p class="todo-item__title">학원 과제</p>
+            </div>
+          </li>
+          <li class="todo-item">
+            <div class="todo-item__detail">
+              <button type="button" class="check-btn"></button>
+              <p class="todo-item__title">포트폴리오 제작</p>
+            </div>
+            <div class="todo-item__button-area">
+              <button class="open-btn open-btn--closed">
+                <i class="icon icon-open"></i>
+              </button>
+            </div>
+            <ul class="todo-sub-list">
+              <li class="todo-item">
+                <div class="todo-item__detail">
+                  <button type="button" class="check-btn check-btn--doing">
+                    <svg width="18" height="17" viewBox="0 0 18 17" fill="#b8f095" xmlns="http://www.w3.org/2000/svg" class="icon-doing">
+                      <path
+                        d="M7.71752 2.39491L1.36502 12.9999C1.23404 13.2267 1.16474 13.4839 1.16401 13.7458C1.16327 14.0077 1.23113 14.2653 1.36084 14.4928C1.49054 14.7204 1.67756 14.91 1.9033 15.0428C2.12903 15.1756 2.38562 15.247 2.64752 15.2499H15.3525C15.6144 15.247 15.871 15.1756 16.0967 15.0428C16.3225 14.91 16.5095 14.7204 16.6392 14.4928C16.7689 14.2653 16.8368 14.0077 16.836 13.7458C16.8353 13.4839 16.766 13.2267 16.635 12.9999L10.2825 2.39491C10.1488 2.17449 9.96056 1.99225 9.73591 1.86577C9.51127 1.7393 9.25782 1.67285 9.00002 1.67285C8.74221 1.67285 8.48876 1.7393 8.26412 1.86577C8.03947 1.99225 7.85122 2.17449 7.71752 2.39491V2.39491Z"
+                        fill="#b8f095"
+                        stroke="#b8f095"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                  <p class="todo-item__title">화면 디자인</p>
+                </div>
+              </li>
+              <li class="todo-item">
+                <div class="todo-item__detail">
+                  <button type="button" class="check-btn check-btn--complete">
+                    <i class="icon icon-check-complete-w"></i>
+                  </button>
+                  <p class="todo-item__title">기획</p>
+                </div>
+                <div class="status-selectors">
+                  <div class="status-selector">
+                    <button type="button" class="check-btn check-btn--complete">
+                      <i class="icon icon-check-complete-w"></i>
+                    </button>
+                    <span class="status-selector__text">완료</span>
+                  </div>
+                  <div class="status-selector">
+                    <button type="button" class="check-btn check-btn--doing">
+                      <svg width="18" height="17" viewBox="0 0 18 17" fill="#b8f095" xmlns="http://www.w3.org/2000/svg" class="icon-doing">
+                        <path
+                          d="M7.71752 2.39491L1.36502 12.9999C1.23404 13.2267 1.16474 13.4839 1.16401 13.7458C1.16327 14.0077 1.23113 14.2653 1.36084 14.4928C1.49054 14.7204 1.67756 14.91 1.9033 15.0428C2.12903 15.1756 2.38562 15.247 2.64752 15.2499H15.3525C15.6144 15.247 15.871 15.1756 16.0967 15.0428C16.3225 14.91 16.5095 14.7204 16.6392 14.4928C16.7689 14.2653 16.8368 14.0077 16.836 13.7458C16.8353 13.4839 16.766 13.2267 16.635 12.9999L10.2825 2.39491C10.1488 2.17449 9.96056 1.99225 9.73591 1.86577C9.51127 1.7393 9.25782 1.67285 9.00002 1.67285C8.74221 1.67285 8.48876 1.7393 8.26412 1.86577C8.03947 1.99225 7.85122 2.17449 7.71752 2.39491V2.39491Z"
+                          fill="#b8f095"
+                          stroke="#b8f095"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <span class="status-selector__text">진행중</span>
+                  </div>
+                </div>
+              </li>
+              <li class="todo-item">
+                <div class="todo-item__detail">
+                  <button type="button" class="check-btn"></button>
+                  <p class="todo-item__title">html</p>
+                </div>
+              </li>
+              <li class="todo-item">
+                <div class="todo-item__detail">
+                  <button type="button" class="check-btn"></button>
+                  <p class="todo-item__title">css</p>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer class="footer">
+      <nav class="gnb">
+        <ul class="gnb-list">
+          <li class="gnb-item">
+            <a href="#" class="gnb-item__link">
+              <i class="icon icon-diary"></i>
+              다이어리
+            </a>
+          </li>
+          <li class="gnb-item">
+            <a href="#" class="gnb-item__link">
+              <i class="icon icon-todo"></i>
+              할 일
+            </a>
+          </li>
+          <li class="gnb-item">
+            <a href="#" class="gnb-item__link">
+              <i class="icon icon-calendar"></i>
+              캘린더
+            </a>
+          </li>
+          <li class="gnb-item">
+            <a href="#" class="gnb-item__link">
+              <i class="icon icon-planner"></i>
+              계획표
+            </a>
+          </li>
+          <li class="gnb-item">
+            <a href="#" class="gnb-item__link">
+              <i class="icon icon-store"></i>
+              스토어
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>
