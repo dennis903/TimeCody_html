@@ -128,27 +128,28 @@
   font-size: 1.4;
 }
 
-.edit-form {
+.form {
   padding: 0 2rem;
   text-align: left;
+  padding-bottom: 2rem;
 }
 
-.edit-form__field {
+.form__field {
   display: flex;
   flex-direction: column;
 }
 
-.edit-form__input-wrap {
+.form__input-wrap {
   position: relative;
 }
 
-.edit-form__label {
+.form__label {
   font-size: 1.8rem;
   font-weight: 400;
   padding: 1.5rem 0;
 }
 
-.edit-form__input {
+.form__input {
   padding: 1rem .7rem;
   border: none;
   border-bottom: .1rem solid #c1c1c1;
@@ -156,11 +157,26 @@
   font-size: 1.8rem;
 }
 
-.edit-form__btn {
+.form__input::placeholder {
+  color: #DEDEDE;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.form__btn {
   position: absolute;
   top: 50%;
   right: 2rem;
   transform: translate(50%, -50%);
+}
+
+.form__submit {
+  position: relative;
+  margin-top: 2.3rem 0;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 1rem 3rem;
+  border: .1rem solid #343434;
 }
 
 .my-config {
@@ -173,10 +189,22 @@
 }
 
 .title3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 1.8rem;
   font-weight: 400;
   color: #6b6b6b;
   padding: 1.5rem 0;
+}
+
+.title3 .icon-up {
+  transform: rotate(180deg);
+  transition: .3s;
+}
+
+.config__accordion[open] .title3 .icon-up {
+  transform: rotate(0deg);
 }
 
 .config-item {
@@ -246,34 +274,127 @@
   height: 1.9rem;
 }
 
-.login-form__field {
-  display: flex;
-  flex-direction: column;
-  padding: 1.5rem 2rem;
-  text-align: left;
+summary {
+  list-style-type: none;
 }
 
-.login-form__label {
+.config-day {
+  margin-left: 2rem;
+}
+
+.config-day__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  border-bottom: .1rem solid #e3e3e3;
+}
+
+.config-day__text {
   font-size: 1.8rem;
   font-weight: 400;
-  padding-bottom: 1.5rem;
-  color: #343434;
+  flex-shrink: 0;
 }
 
-.login-form__input {
+.config-day__check {
+  position: relative;
+  width: 100%;
+  height: 1.3rem;
+  text-align: right;
+}
+
+.config-day__radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.icon-check-complete {
+  display: none;
+}
+
+.config-day__radio:checked + .icon-check-complete {
+  display: inline-block;
+}
+
+.form__field-info {
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 1.5rem 0;
+  position: relative;
+}
+
+.form__field {
+  margin-bottom: 2rem;
+}
+
+.form__select-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.form__input-email {
+  padding: 1rem .7rem;
+  border: none;
+  border-bottom: .1rem solid #c1c1c1;
+  width: 50%;
+}
+
+.form__input-email::placeholder {
+  color: #D2D2D2;
+}
+
+.form__input--dimmed {
+  padding: 1rem .7rem;
+  border: none;
+  border-bottom: .1rem solid #c1c1c1;
+  background-color: #f0f0f0;
+}
+
+.form__input--dimmed::placeholder {
+  color: #D2D2D2;
   font-size: 1.4rem;
   font-weight: 400;
-  color: #D2D2D2;
-  border: none;
-  padding: 1rem 0.7rem;
-  border-bottom: .1rem solid #c1c1c1;
 }
 
-.login-form__submit {
-  margin-top: 2rem;
-  padding: 1rem 4.4rem;
-  border: .1rem solid #343434;
+.text-deco {
+  color: #D2D2D2;
   font-size: 1.4rem;
+  align-items: center;
+}
+
+.form__select {
+  padding: 1rem 0;
+  border: .1rem solid #c1c1c1;
+}
+
+#email-select {
+  width: 50%;
+}
+
+#year {
+  flex: 1.25;
+}
+
+#month {
+  flex: 1;
+}
+
+#day {
+  flex: 1;
+}
+
+.form__radio-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.form-label {
+  font-size: 1.8rem;
   font-weight: 400;
 }
 

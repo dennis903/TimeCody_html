@@ -21,30 +21,95 @@
       </div>
     </header>
     <main class="main">
-      <form class="sign-up-form">
-        <fieldset class="sign-up-form__field">
-          <label for="id" class="sign-up-form__label">아이디</label>
-          <input type="text" name="id" placeholder="4글자 이상 영어, 숫자만 사용가능 합니다." id="id" class="sign-up-form__input">
+      <form class="form">
+        <fieldset class="form__field">
+          <div class="form__field-info">
+            * 아이디
+            <button type="button" class="btn form__btn">중복확인</button>
+          </div>
+          <input type="text" name="id" placeholder="4글자 이상 영어, 숫자만 사용가능 합니다." id="id" class="form__input">
         </fieldset>
-        <fieldset class="sign-up-form__field">
-          <label for="password" class="sign-up-form__label">비밀번호</label>
-          <input type="password" name="password" placeholder="6글자 이상 영어, 숫자, 특수문자를 사용해주세요." id="password" class="sign-up-form__input">
+        <fieldset class="form__field">
+          <div class="form__field-info">
+            * 비밀번호
+          </div>
+          <input type="password" name="password" placeholder="6글자 이상 영어, 숫자, 특수문자를 사용해주세요." id="password" class="form__input">
         </fieldset>
-        <fieldset class="sign-up-form__field">
-            <label for="passwordConfirm" class="sign-up-form__label">비밀번호 확인</label>
-            <input type="password" name="passwordConfirm" placeholder="비밀번호를 다시 입력해 주세요." id="passwordConfirm" class="sign-up-form__input">
+        <fieldset class="form__field">
+          <div class="form__field-info">
+            * 비밀번호 확인
+          </div>
+            <input type="password" name="passwordConfirm" placeholder="비밀번호를 다시 입력해 주세요." id="passwordConfirm" class="form__input">
         </fieldset>
-        <fieldset class="sign-up-form__field">
-          <label for="name" class="sign-up-form__label">이름</label>
-          <input type="text" name="name" placeholder="이름을 입력해 주세요." id="name" class="sign-up-form__input">
+        <fieldset class="form__field">
+          <div class="form__field-info">
+            * 이름
+          </div>
+          <input type="text" name="name" placeholder="이름을 입력해 주세요." id="name" class="form__input">
         </fieldset>
-        <fieldset class="sign-up-form__field">
-          <label for="name" class="sign-up-form__label">메일</label>
-          <input type="text" name="email" placeholder="이메일주소" id="email" class="sign-up-form__input-email">
+        <fieldset class="form__field">
+          <div class="form__field-info">
+            메일 <span class="form__label-sub">(선택)</span>
+          </div>
+          <div class="form__select-wrap">
+            <input type="text" name="email" placeholder="이메일주소" id="email" class="form__input-email">
+            <span class="text-deco">@</span>
+            <select name="email-select" id="email-select" class="form__select">
+              <option value="@naver.com" class="form-option">naver.com</option>s
+              <option value="@google.com" class="form-option">google.com</option>
+            </select>
+          </div>
         </fieldset> 
+        <fieldset class="form__field">
+          <div class="form__field-info">
+            * 휴대전화
+            <button type="button" class="btn form__btn">인증하기</button>
+          </div>
+          <input type="tel" name="tel" placeholder="전화번호를 입력해 주세요." id="tel" class="form__input">
+          <input type="number" name="auth" placeholder="인증번호를 입력해 주세요." id="auth" class="form__input--dimmed">
+        </fieldset>
+        <fieldset class="form__field">
+          <div class="form__field-info">
+            생년월일 <span class="form__label-sub">(선택)</span>
+          </div>
+          <div class="form__select-wrap">
+            <select name="year" id="year" class="form__select">
+              <option value="2024" class="form-option">2024</option>
+              <option value="2023" class="form-option">2023</option>
+              <option value="2022" class="form-option">2022</option>
+              <option value="2021" class="form-option">2021</option>
+            </select>
+            <select name="month" id="month" class="form__select">
+              <option value="1" class="form-option">1</option>
+              <option value="2" class="form-option">2</option>
+              <option value="3" class="form-option">3</option>
+              <option value="4" class="form-option">4</option>
+            </select>
+            <select name="day" id="day" class="form__select">
+              <option value="1" class="form-option">1</option>
+              <option value="2" class="form-option">2</option>
+              <option value="3" class="form-option">3</option>
+              <option value="4" class="form-option">4</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset class="form__field">
+          <div class="form__field-info">
+            성별 <span class="form__label-sub">(선택)</span>
+          </div>
+          <div class="form__radio-wrap">
+            <div class="form__radio-box">
+              <input type="radio" name="gender" id="man" class="form__radio">
+              <label for="man" class="form-label">남자</label>
+            </div>
+            <div class="form__radio-box">
+              <input type="radio" name="gender" id="woman" class="form__radio">
+              <label for="woman" class="form-label">여자</label>
+            </div>
+          </div>
+        </fieldset>
 
-
-        <button type="submit" class="btn login-form__submit">가입하기</button>
+        <button type="submit" class="btn form__submit">가입하기</button>
       </form>
     </main>
     <footer class="footer">

@@ -77,20 +77,23 @@
         <section class="my-config__section">
           <h2 class="blind" style="display: none;">주 시작 요일</h2>
           <details class="config__accordion">
-            <summary class="title3">주 시작 요일</summary>
-            <ul class="config-accordion">
-              <li class="config-accordion__item">
-                <label class="config-accordion__text">일요일</label>
-                <div class="config-accordion__check">
+            <summary class="title3">
+              주 시작 요일
+              <i class="icon icon-up"></i>
+            </summary>
+            <ul class="config-day">
+              <li class="config-day__item">
+                <label for="sunday" class="config-day__text">일요일</label>
+                <div class="config-day__check">
+                  <input type="radio" name="day" checked id="sunday" class="config-day__radio">
                   <i class="icon icon-check-complete"></i>
-                  <input type="radio" name="day" id="sunday" class="config-accordion__radio">
                 </div>
               </li>
-              <li class="config-accordion__item">
-                <label class="config-accordion__text">월요일</label>
-                <div class="config-accordion__check">
+              <li class="config-day__item">
+                <label for="monday" class="config-day__text">월요일</label>
+                <div class="config-day__check">
+                  <input type="radio" name="day" id="monday" class="config-day__radio">
                   <i class="icon icon-check-complete"></i>
-                  <input type="radio" name="day" id="monday" class="config-accordion__radio">
                 </div>
               </li>
             </ul>
