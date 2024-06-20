@@ -203,7 +203,7 @@
   transition: .3s;
 }
 
-.config__accordion[open] .title3 .icon-up {
+.accordion[open] .title3 .icon-up {
   transform: rotate(0deg);
 }
 
@@ -278,31 +278,31 @@ summary {
   list-style-type: none;
 }
 
-.config-day {
+.sub-select {
   margin-left: 2rem;
 }
 
-.config-day__item {
+.sub-select__item {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 2rem;
   border-bottom: .1rem solid #e3e3e3;
 }
 
-.config-day__text {
+.sub-select__text {
   font-size: 1.8rem;
   font-weight: 400;
   flex-shrink: 0;
 }
 
-.config-day__check {
+.sub-select__check {
   position: relative;
   width: 100%;
   height: 1.3rem;
   text-align: right;
 }
 
-.config-day__radio {
+.sub-select__radio {
   position: absolute;
   top: 0;
   left: 0;
@@ -315,7 +315,7 @@ summary {
   display: none;
 }
 
-.config-day__radio:checked + .icon-check-complete {
+.sub-select__radio:checked + .icon-check-complete {
   display: inline-block;
 }
 
@@ -398,3 +398,6 @@ summary {
   font-weight: 400;
 }
 
+.menu {
+  padding: 2rem;
+}
