@@ -22,70 +22,68 @@
     </header>
     <main class="main">
       <div class="theme">
-        <ul class="config-list">
-          <li class="config-item">
-            <span class="title3">다크모드</span>
-            <div class="switch">
+        <div class="switch-wrapper">
+          <span class="title3">다크모드</span>
+          <div class="switch">
             <input type="checkbox" id="dark-mode" class='switch__checkbox'>
             <label for="dark-mode" class="switch__slider"></label>
-            </div>
-          </li>
-        </ul>
+          </div>
+        </div>
         <details class="accordion">
           <summary class="title3">
             테마설정
             <i class="icon icon-up"></i>
           </summary>
-          <details class="accordion">
-            <summary class="title3">
-              기본테마
-              <i class="icon icon-up"></i>
-            </summary>
-            <ul class="sub-select">
-              <li class="sub-select__item">
-                <label for="achromatic" class="sub-select__text">무채색</label>
-                <div class="sub-select__check">
-                  <input type="radio" name="theme" id="achromatic" class="sub-select__radio">
-                  <i class="icon icon-check-complete"></i>
-                </div>
-              </li>
-              <li class="sub-select__item">
+        </details>
+        <details class="accordion">
+          <summary class="title3">
+            기본테마
+            <i class="icon icon-up"></i>
+          </summary>
+          <ul class="sub-select">
+            <li class="sub-select__item">
+              <label for="achromatic" class="sub-select__text">무채색</label>
+              <div class="sub-select__check">
+                <input type="radio" name="theme" id="achromatic" class="sub-select__radio">
+                <i class="icon icon-check-complete"></i>
+              </div>
+            </li>
+            <li class="sub-select__item">
               <label for="red" class="sub-select__text">Red</label>
               <div class="sub-select__check">
                 <input type="radio" name="theme" id="red" class="sub-select__radio">
                 <i class="icon icon-check-complete"></i>
               </div>
-              </li>
-              <li class="sub-select__item">
+            </li>
+            <li class="sub-select__item">
               <label for="yellow" class="sub-select__text">Yellow</label>
               <div class="sub-select__check">
                 <input type="radio" name="theme" id="yellow" class="sub-select__radio">
                 <i class="icon icon-check-complete"></i>
               </div>
-              </li>
-              <li class="sub-select__item">
-                <label for="green" class="sub-select__text">Green</label>
-                <div class="sub-select__check">
-                  <input type="radio" name="theme" id="green" class="sub-select__radio">
-                  <i class="icon icon-check-complete"></i>
-                </div>
-                </li>
-              <li class="sub-select__item">
-                <label for="blue" class="sub-select__text">Blue</label>
-                <div class="sub-select__check">
-                  <input type="radio" name="theme" id="blue" class="sub-select__radio">
-                  <i class="icon icon-check-complete"></i>
-                </div>
-              </li>
-              <li class="sub-select__item">
-                <label for="purple" class="sub-select__text">Purple</label>
-                <div class="sub-select__check">
-                  <input type="radio" name="theme" id="purple" class="sub-select__radio">
-                  <i class="icon icon-check-complete"></i>
-                </div>
-              </li>
-            </ul>
-          </details>
+            </li>
+            <li class="sub-select__item">
+              <label for="green" class="sub-select__text">Green</label>
+              <div class="sub-select__check">
+                <input type="radio" name="theme" id="green" class="sub-select__radio">
+                <i class="icon icon-check-complete"></i>
+              </div>
+            </li>
+            <li class="sub-select__item">
+              <label for="blue" class="sub-select__text">Blue</label>
+              <div class="sub-select__check">
+                <input type="radio" name="theme" id="blue" class="sub-select__radio">
+                <i class="icon icon-check-complete"></i>
+              </div>
+            </li>
+            <li class="sub-select__item">
+              <label for="purple" class="sub-select__text">Purple</label>
+              <div class="sub-select__check">
+                <input type="radio" name="theme" id="purple" class="sub-select__radio">
+                <i class="icon icon-check-complete"></i>
+              </div>
+            </li>
+          </ul>
         </details>
         <details class="accordion">
           <summary class="title3">
@@ -99,7 +97,7 @@
                 <input type="radio" name="font" id="normal" class="sub-select__radio">
                 <i class="icon icon-check-complete"></i>
               </div>
-             </li> 
+            </li> 
           </ul>
         </details>
         <details class="accordion">
